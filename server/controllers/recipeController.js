@@ -19,7 +19,7 @@ exports.homepage = async(req, res) => {
 
     res.render('index', { title: 'Cooking Blog - Home', categories, food } );
   } catch (error) {
-    res.satus(500).send({message: error.message || "Error Occured" });
+    res.status(500).send({message: error.message || "Error Occured" });
   }
 }
 
@@ -36,6 +36,8 @@ exports.exploreCategories = async(req, res) => {
     res.satus(500).send({message: error.message || "Error Occured" });
   }
 } 
+
+
 
 
 /**
